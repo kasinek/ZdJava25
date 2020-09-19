@@ -1,7 +1,8 @@
 package grcy.sda.patterns.creational.abstractFactory;
 
 public class FordFactory {
-    public static Ford getFord(FordAbstractFactory factory) {
+
+    public static Ford createFord(FordAbstractFactory factory) {
         return factory.createFord();
     }
 }

@@ -4,13 +4,13 @@ public class TestAbstractFactory {
 
 
     public static void main(String[] args) {
-        Ford fiesta1 = FordFactory.getFord(
+        Ford fiesta1 = FordFactory.createFord(
                 new FordFiestaFactory("Fiesta 1.1 2022", "1.0 EcoBoost", "winter pack"));
 
-        Ford fiesta2 = FordFactory.getFord(
+        Ford fiesta2 = FordFactory.createFord(
                 new FordFiestaFactory("Fiesta 0.9 2020", "0.9", ""));
 
-        Ford focus1 = FordFactory.getFord(
+        Ford focus1 = FordFactory.createFord(
                 new FordFocusFactory("Focus 1.6 2020", "1.6 EcoBoost", "winter pack, alu wheels, red lightning"));
 
 

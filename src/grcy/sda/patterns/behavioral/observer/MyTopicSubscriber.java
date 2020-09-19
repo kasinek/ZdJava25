@@ -8,6 +8,7 @@ public class MyTopicSubscriber implements Observer {
 	public MyTopicSubscriber(String nm){
 		this.name=nm;
 	}
+
 	@Override
 	public void update() {
 		String msg = (String) topic.getUpdate(this);

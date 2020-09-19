@@ -3,10 +3,18 @@ package grcy.sda.patterns.behavioral.strategy;
 public class CarStrategy implements TravelStrategy {
     private boolean includeMotorways;
     private boolean includeFieldRoads;
+    private boolean includeFerries;
 
     public CarStrategy(boolean includeMotorways, boolean includeFieldRoads) {
         this.includeMotorways = includeMotorways;
         this.includeFieldRoads = includeFieldRoads;
+        includeFerries = false;
+    }
+
+    public CarStrategy(boolean includeMotorways, boolean includeFieldRoads, boolean includeFerries) {
+        this.includeMotorways = includeMotorways;
+        this.includeFieldRoads = includeFieldRoads;
+        this.includeFerries = includeFerries;
     }
 
     @Override

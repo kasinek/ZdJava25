@@ -3,8 +3,8 @@ package grcy.sda.patterns.behavioral.observer;
 public interface Observer {
 
 	//method to update the observer, used by subject
-	public void update();
+	void update();
 
 	//attach with subject to observe
-	public void setSubject(Subject sub);
+	void setSubject(Subject sub);
 }

@@ -14,7 +14,7 @@ public class FordMustangBaseFactory {
             System.out.println("Base set size > 0");
             fordMustangBase = fordMustangBaseSet.stream()
                     .filter(f -> color.equals(f.getColor()) && engine.equals(f.getEngine()))
-                    .peek(s -> System.out.println(s.getEngine() + " " + s.getColor()))
+                    .peek(s -> System.out.println("Peek: " +s.getEngine() + " " + s.getColor()))
                     .findAny()
                     .orElseGet(() -> getNewFordMustangBase(color, engine));
         } else {

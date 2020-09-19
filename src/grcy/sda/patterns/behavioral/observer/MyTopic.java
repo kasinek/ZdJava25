@@ -12,6 +12,7 @@ public class MyTopic implements Subject {
 	public MyTopic(){
 		this.observers=new ArrayList<>();
 	}
+
 	@Override
 	public void register(Observer obj) {
 		if(obj == null) throw new NullPointerException("Null Observer");
@@ -28,6 +29,7 @@ public class MyTopic implements Subject {
 		List<Observer> observersLocal = null;
 		if (!changed)
 			return;
+
 		observersLocal = new ArrayList<>(this.observers);
 		this.changed=false;
 

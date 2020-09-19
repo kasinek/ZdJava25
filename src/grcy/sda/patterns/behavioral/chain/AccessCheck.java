@@ -8,7 +8,7 @@ public abstract class AccessCheck {
         return nextCheck;
     }
 
-    public abstract  boolean doCheck(String username);
+    public abstract boolean doCheck(String username);
 
     protected boolean checkNextElement(String username) {
         if(nextCheck == null) {
